@@ -1,0 +1,56 @@
+.navBar{
+    display: flex;
+    flex-direction: row;
+    padding: 12px;
+    justify-content: space-between;
+    height: 10vh;
+}
+.navHeading, .navCartSection{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.navhead{
+    display: flex;
+    flex-direction: row;
+    height: 5vh;
+    align-items: center;
+}
+.navloaction{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .navBar {
+        height: auto; /* Adjust height on smaller screens */
+        padding: 8px; /* Adjust padding for mobile */
+    }
+    
+    .navHeading, .navCartSection {
+        width: 50%; /* Make each section take full width */
+        justify-content: center; /* Center content horizontally */
+        margin-bottom: 10px; /* Space between sections */
+    }
+    
+    .navloaction {
+        text-align: center; /* Center text on small screens */
+        margin-left: 0; /* Adjust positioning */
+    }
+    
+    .navhead {
+        flex-direction: column; /* Stack the location name and icon vertically */
+        align-items: center;
+    }
+    
+    .navCartSection {
+        justify-content: center;
+        margin-top: 10px; /* Space above cart section */
+    }
+
+    .navCartSection div {
+        margin: 0 10px; /* Add space between cart icons */
+    }
+}
