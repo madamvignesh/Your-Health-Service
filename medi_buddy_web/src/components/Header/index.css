@@ -28,7 +28,7 @@
 
 @media (max-width: 768px) {
     .navBar {
-        height: 15vh;
+        height: auto;
         padding: 8px; 
         display: flex;
         flex-direction: row;
