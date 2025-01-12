@@ -59,7 +59,7 @@ export const BannerImage = styled.img`
 export const BannerButton = styled.a`
   display: inline-block;
   margin-top: 20px;
-  padding: 10px 20px;
+  padding: 10px;
   background-color: #007bff;
   color: white;
   text-decoration: none;
