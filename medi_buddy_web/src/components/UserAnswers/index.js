@@ -11,6 +11,7 @@ import {
     ReviewHeading,
     UserDetails,
     RatingDetails,
+    ReviewesContainer,
     Rating,
     Feedback,
     UserName,
@@ -51,21 +52,25 @@ class UserAnswer extends Component{
         const {data} = this.state
         return(
             <QuestionContainer>
+                <div>
                 <QuestionTitle>{data.title}</QuestionTitle>
-                {data.props.map((each, index) => (
-                    <ReviewContainer key={index}>
-                        <ReviewHeading>
-                            <UserDetails>
-                                <UserName>{each.name}</UserName>
-                                <UserDate>{each.days}</UserDate>
-                            </UserDetails>
-                            <RatingDetails>
-                                <Rating>⭐ {each.rating}</Rating>
-                            </RatingDetails>
-                        </ReviewHeading>
-                        <Feedback>{each.content}</Feedback>
-                    </ReviewContainer>
-                ))}
+                </div>
+                <ReviewesContainer>
+                    {data.props.map((each, index) => (
+                        <ReviewContainer key={index}>
+                            <ReviewHeading>
+                                <UserDetails>
+                                    <UserName>{each.name}</UserName>
+                                    <UserDate>{each.days}</UserDate>
+                                </UserDetails>
+                                <RatingDetails>
+                                    <Rating>⭐ {each.rating}</Rating>
+                                </RatingDetails>
+                            </ReviewHeading>
+                            <Feedback>{each.content}</Feedback>
+                        </ReviewContainer>
+                    ))}
+                </ReviewesContainer>
             </QuestionContainer>
         )
     }

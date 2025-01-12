@@ -37,12 +37,16 @@ export const IconContainer = styled.div`
 
 export const IconItem = styled.div`
   text-align: center;
-  max-width: 120px;
+  width: 15%;
+
+  @media(max-width: 768px){
+    width: 45%;
+  }
 `;
 
 export const IconImage = styled.img`
-  width: 60px;
-  height: 60px;
+  width: 120px;
+  height: 120px;
   margin-bottom: 10px;
 `;
 

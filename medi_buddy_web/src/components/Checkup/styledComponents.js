@@ -29,7 +29,6 @@ export const Header = styled.div`
     color: #007bff;
     font-weight: bold;
     text-decoration: none;
-    transition: color 0.3s ease;
 
     &:hover {
       color: #0056b3;
@@ -99,6 +98,7 @@ export const Package = styled.div`
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   min-width: 280px;
+  max-width: 400px;
   flex-shrink: 0;
   text-align: start;
 `;
@@ -134,6 +134,10 @@ export const PackageDetails = styled.div`
     font-size: 14px;
     color: #9644e3;
     margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
   }
 `;
 
@@ -150,6 +154,7 @@ export const PackageData = styled.div`
 export const Card = styled.div`
   background-color: #f9f9f9;
   padding: 10px;
+  padding-top: 0px;
   border-radius: 8px;
   width: calc(45% - 10px);
 
@@ -165,6 +170,16 @@ export const Card = styled.div`
     font-size: 12px;
     color: #555;
   }
+  .cardDesci{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  @media (max-width: 768px){
+    width: calc(95% - 10px);
+  }
 `;
 
 export const PackageRate = styled.div`
@@ -178,6 +193,14 @@ export const PackageRate = styled.div`
     font-weight: bold;
   }
 `;
+
+export const RateContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: flex-start;
+  gap: 10px;
+`
 
 export const Quantity = styled.div`
   display: flex;
@@ -205,7 +228,11 @@ export const Quantity = styled.div`
     font-weight: bold;
     color: #333;
   }
-`;
+`
+export const MainPrice = styled.h2`
+  color: #19e7d1 !important;
+  text-decoration: line-through;
+`
 export const LoaderContainer = styled.div`
   display: flex;
   justify-content: center;

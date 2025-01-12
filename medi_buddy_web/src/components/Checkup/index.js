@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { GiStopwatch } from "react-icons/gi"
+import { FaShippingFast } from "react-icons/fa"
 import {
   CheckupContainer,
   Header,
@@ -12,7 +14,12 @@ import {
   PackageData,
   Card,
   PackageRate,
-  Quantity, LoaderContainer, ErrorContainer, Heading, Message
+  Quantity,
+  LoaderContainer,
+  ErrorContainer,
+  Heading, Message,
+  MainPrice,
+  RateContainer,
 } from './styledComponents.js'
 
 const apiCallLists = {
@@ -108,7 +115,7 @@ class Checkup extends Component {
       <CheckupContainer>
         <Header>
           <h1>{data?.heading}</h1>
-          <a href="#">View All</a>
+          <a>View All</a>
         </Header>
         <CategoryHolder>
           {categoriesList.map((each, index) => (
@@ -130,7 +137,10 @@ class Checkup extends Component {
                 </SponsoredContainer>
                 <PackageDetails>
                   <h2>{pkg.package_display_name}</h2>
-                  <p className="packageDesci">{pkg.reports_tat_text}</p>
+                  <p className="packageDesci">
+                    <GiStopwatch size={25}/>
+                    {pkg.reports_tat_text}
+                  </p>
                   <PackageData>
                     <Card>
                       <h3>{pkg.test_count} Tests</h3>
@@ -142,12 +152,17 @@ class Checkup extends Component {
                       </ul>
                     </Card>
                     <Card>
-                      <h3>Includes</h3>
+                      <h3>Package Type</h3>
+                      <ul>
+                        <li>{pkg.package_type}</li>
+                      </ul>
                     </Card>
                     <Card>
                       <h3>Fasting</h3>
                       <ul>
-                        <li>{pkg.fasting_hours_text}</li>
+                        <li className='cardDesci'>
+                          <FaShippingFast size={16}/>
+                          {pkg.fasting_hours_text}</li>
                       </ul>
                     </Card>
                     <Card>
@@ -156,7 +171,10 @@ class Checkup extends Component {
                     </Card>
                   </PackageData>
                   <PackageRate>
-                    <h2>₹{pkg.discount_info.discount_price}</h2>
+                    <RateContainer>
+                      <MainPrice>₹{pkg.price_range}</MainPrice>
+                      <h2>₹{pkg.price}</h2>
+                    </RateContainer>
                     <Quantity>
                       <button>-</button>
                       <p>1</p>

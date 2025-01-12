@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const QuestionContainer = styled.div`
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   padding: 20px;
   background-color: #f9f9f9;
@@ -13,6 +13,18 @@ export const QuestionContainer = styled.div`
   gap: 20px;
 `;
 
+export const ReviewesContainer = styled.div`
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 10px;
+
+  @media(max-width: 768px){
+    flex-direction: column;
+  }
+`
+
 export const QuestionTitle = styled.h2`
   font-size: 24px;
   font-weight: bold;
@@ -22,12 +34,16 @@ export const QuestionTitle = styled.h2`
 
 export const ReviewContainer =styled.div`
   text-align: start;
-  width: 90%;
+  width: 30%;
   background: #fff;
   padding: 15px 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+
+  @media(max-width:768px){
+    width: 95%;
+  }
 `
 export const ReviewHeading = styled.div`
   display: flex;

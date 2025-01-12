@@ -65,6 +65,8 @@ export const BannerImage = styled.img`
   opacity: 1;
 
   @media (max-width: 768px) {
-    transform: scaleX(-1) scale(2.4) translate(10%, +1%);
+    height: 70px;
+    width: auto;
+    transform: scaleX(-1) scale(2.4) translate(-5%, -7%);
   }
 `;

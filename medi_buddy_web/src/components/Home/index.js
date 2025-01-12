@@ -3,10 +3,12 @@ import { CiSearch } from "react-icons/ci";
 
 import Header from '../Header'
 import Checkup from '../Checkup';
+import Banner from "../Banners";
 import HealthCategories from '../HealthCategories';
 import BookingPackages from '../BookingPackages';
 import Icons from '../Icons';
 import UserAnswer from "../UserAnswers";
+import QuestionsAnswers from "../Questions&Answers";
 
 import { BannerContainer, BannerTitle, BannerImageCard, BannerImage } from './styledComponents';
 import './index.css'
@@ -40,11 +42,13 @@ const Home = () =>{
                 <input type='text' className='inputsearch' placeholder='Find lab test, diagnostics centers'/>
                 <CiSearch size={25}/>
             </div>
+            <Banner />
             {getBannerData()}
             <Checkup />
             <HealthCategories />
             <BookingPackages/>
             <UserAnswer />
+            <QuestionsAnswers />
         </div>
     )
 }
