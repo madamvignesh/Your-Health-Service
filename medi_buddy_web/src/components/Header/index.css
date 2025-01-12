@@ -12,6 +12,9 @@
     flex-direction: row;
     align-items: center;
 }
+.navCartSection{
+    justify-content: space-between;
+}
 .navhead{
     display: flex;
     flex-direction: row;
