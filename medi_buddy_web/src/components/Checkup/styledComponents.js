@@ -98,8 +98,9 @@ export const Package = styled.div`
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   min-width: 280px;
-  max-width: 400px;
+  max-width: 500px;
   flex-shrink: 0;
+  margin-bottom: 10px;
   text-align: start;
 
     @media(max-width: 768px){
@@ -216,15 +217,11 @@ export const Quantity = styled.div`
     color: #ffffff;
     font-size: 18px;
     font-weight: bold;
+    text-align: center;
+    width: 25px;
+    height: 25px;
     border: none;
-    padding: 5px 10px;
     border-radius: 6px;
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-
-    &:hover {
-      background-color: #0056b3;
-    }
   }
 
   p {

@@ -16,11 +16,17 @@
     display: flex;
     flex-direction: row;
     height: 5vh;
+    text-align: center;
     align-items: center;
 }
 .navloaction{
     display: flex;
     flex-direction: column;
+
+    h1{
+        color: #0400ff;
+        font-family: 'Gill Sans';
+    }
 }
 
 @media (max-width: 768px) {

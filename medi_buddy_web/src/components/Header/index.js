@@ -10,11 +10,11 @@ const Header = () =>(
         <div className='navHeading'>
             <FaArrowLeft size={36}/>
             <div className='navloaction'>
+                <h1>Medi Buddy Health Services</h1>
                 <div className='navhead'>
-                    <h1>Billekahalli</h1>
+                    <h3>Billekahalli</h3>
                     <MdOutlineLocationOn size={28}/>
                 </div>
-                <p>Sarvabhoumanagar Billekahalli</p>
             </div>
         </div>
         <div className='navCartSection'>

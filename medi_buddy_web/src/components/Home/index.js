@@ -9,6 +9,7 @@ import BookingPackages from '../BookingPackages';
 import Icons from '../Icons';
 import UserAnswer from "../UserAnswers";
 import QuestionsAnswers from "../Questions&Answers";
+import Assests from "../Assests";
 
 import { BannerContainer, BannerTitle, BannerImageCard, BannerImage } from './styledComponents';
 import './index.css'
@@ -49,6 +50,7 @@ const Home = () =>{
             <BookingPackages/>
             <UserAnswer />
             <QuestionsAnswers />
+            <Assests />
         </div>
     )
 }
