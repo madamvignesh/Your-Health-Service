@@ -109,7 +109,7 @@ class Checkup extends Component {
     const {data, highlightedCategory} = this.state
     const categoriesList = data.categories[10386]
     const packagesList = data.packages.filter(pkg =>
-      pkg.sub_categories.includes(highlightedCategory.toUpperCase())
+      pkg.sub_categories.includes(highlightedCategory.toUpperCase()) && pkg.contract_id === 10386
     ) || []
     return(
       <CheckupContainer>
