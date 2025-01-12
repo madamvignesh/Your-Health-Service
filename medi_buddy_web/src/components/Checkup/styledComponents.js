@@ -101,6 +101,10 @@ export const Package = styled.div`
   max-width: 400px;
   flex-shrink: 0;
   text-align: start;
+
+    @media(max-width: 768px){
+      width: 700px;
+    }
 `;
 
 export const SponsoredContainer = styled.div`
