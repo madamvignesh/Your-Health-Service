@@ -103,7 +103,7 @@ export const Package = styled.div`
   text-align: start;
 
     @media(max-width: 768px){
-      width: 500px;
+      width: 400px;
     }
 `;
 
