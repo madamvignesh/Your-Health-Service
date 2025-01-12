@@ -8,7 +8,6 @@ import { BsCart } from "react-icons/bs"
 const Header = () =>(
     <nav className='navBar'>
         <div className='navHeading'>
-            <FaArrowLeft size={36}/>
             <div className='navloaction'>
                 <h1>Medi Buddy Health Services</h1>
                 <div className='navhead'>

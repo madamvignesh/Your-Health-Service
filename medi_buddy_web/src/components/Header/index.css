@@ -1,9 +1,9 @@
 .navBar{
     display: flex;
     flex-direction: row;
-    padding: 12px;
     justify-content: space-between;
     height: 10vh;
+    background-color: aliceblue;
 }
 .navHeading, .navCartSection{
     width: 30%;
@@ -16,7 +16,6 @@
     display: flex;
     flex-direction: row;
     height: 5vh;
-    text-align: center;
     align-items: center;
 }
 .navloaction{
@@ -25,38 +24,42 @@
 
     h1{
         color: #0400ff;
-        font-family: 'Gill Sans';
+        font-family:'Lucida Sans';
     }
 }
 
 @media (max-width: 768px) {
     .navBar {
-        height: auto; /* Adjust height on smaller screens */
-        padding: 8px; /* Adjust padding for mobile */
+        height: auto;
+        padding: 8px; 
     }
     
     .navHeading, .navCartSection {
-        width: 50%; /* Make each section take full width */
-        justify-content: center; /* Center content horizontally */
-        margin-bottom: 10px; /* Space between sections */
+        width: 50%; 
+        justify-content: center;
+        margin-bottom: 10px;
     }
     
     .navloaction {
-        text-align: center; /* Center text on small screens */
-        margin-left: 0; /* Adjust positioning */
+        margin-left: 0px;
+        width: 50%;
+        h1{
+            text-align: start;
+            font-size: 18px;
+        }
     }
     
     .navhead {
-        flex-direction: column; /* Stack the location name and icon vertically */
+        flex-direction: column;
         align-items: center;
     }
     
     .navCartSection {
         justify-content: center;
-        margin-top: 10px; /* Space above cart section */
+        margin-top: 10px; 
     }
 
     .navCartSection div {
-        margin: 0 10px; /* Add space between cart icons */
+        margin: 0 10px; 
     }
 }

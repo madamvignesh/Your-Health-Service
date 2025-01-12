@@ -38,11 +38,11 @@ const Home = () =>{
     return(
         <div className='mainContainer'>
             <Header />
-            <Icons />
             <div className='searchContainer'>
                 <input type='text' className='inputsearch' placeholder='Find lab test, diagnostics centers'/>
                 <CiSearch size={25}/>
             </div>
+            <Icons />
             <Banner />
             {getBannerData()}
             <Checkup />

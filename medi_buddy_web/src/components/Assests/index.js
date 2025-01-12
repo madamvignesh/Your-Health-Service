@@ -70,7 +70,7 @@ class Assests extends Component{
         console.log(data)
         return(
             <Container>
-                <h1>About us</h1>
+                <h1>Features</h1>
                 <CardContainer>
                     {data.props.map((item, index) => (
                         <Card key={index}>
